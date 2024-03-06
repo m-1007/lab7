@@ -14,8 +14,9 @@ class Square extends React.Component {
   
   class Board extends React.Component {
     renderSquare(i) {
-      return <Square />;
+      return <Square value={i} />;
     }
+  }
   
     render() {
       const status = 'Next player: X';
@@ -59,6 +60,8 @@ class Square extends React.Component {
     }
   }
   
+
+
   // ========================================
   
   const root = ReactDOM.createRoot(document.getElementById("root"));
